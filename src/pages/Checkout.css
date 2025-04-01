@@ -1,0 +1,150 @@
+
+.checkout-container {
+    background-color: #e5c8a7;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .breadcrumb {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .current {
+    font-weight: bold;
+  }
+  
+  .checkout-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  .billing-details {
+    flex: 1;
+    padding: 20px;
+    color: black;
+    background:  #e5c8a7;
+    border-radius: 8px;
+  }
+  
+  .billing-details h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .billing-details form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .billing-details label {
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  .billing-details input {
+    padding: 10px;
+    color: black;
+    background-color: white;
+    border: 1px  #e5c8a7;
+    border-radius: 5px;
+    margin-top: 5px;
+  }
+  
+  .save-info {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+  }
+  
+  .save-info input {
+    margin-right: 10px;
+  }
+  
+  .order-summary {
+    flex: 1;
+    color: black;
+    padding: 20px;
+    background:  white;
+    border-radius: 8px;
+  }
+  
+  .items {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+  }
+  
+  .item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  .item img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+  }
+  
+  .summary {
+    padding: 10px 0;
+  }
+  
+  .summary p {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .total {
+    font-weight: bold;
+  }
+  
+  .payment-method {
+    margin-top: 10px;
+  }
+  
+  .payment-method label {
+    display: block;
+    margin-top: 5px;
+  }
+  
+  .payment-icons img {
+    width: 40px;
+    margin-right: 5px;
+  }
+  
+  .coupon-section {
+    display: flex;
+    margin-top: 15px;
+  }
+  
+  .coupon-section input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+  }
+  
+  .apply-coupon {
+    padding: 10px;
+    background-color: #d32f2f;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 0 5px 5px 0;
+  }
+  
+  .place-order {
+    width: 100%;
+    margin-top: 15px;
+    padding: 12px;
+    background-color: #d32f2f;
+    color: white;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }

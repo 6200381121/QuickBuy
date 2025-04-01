@@ -1,0 +1,156 @@
+.electronics-page {
+  width: 1500px;
+    background-color: #f3e5cb;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+  }
+  
+  .top-banner {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 8px;
+    font-size: 0.9rem;
+  }
+  
+  .top-banner a {
+    color: #0c0909;
+    font-weight: bold;
+    text-decoration: underline;
+  }
+  
+  .electronics-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .electronics-header h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .electronics-header nav a {
+    margin-left: 15px;
+    color: #333;
+    text-decoration: none;
+    font-size: 1rem;
+  }
+  
+  .product-section {
+    padding: 40px 20px;
+    color:#000;
+  }
+  
+  .product-section h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+  
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 20px;
+  }
+  
+  .product-card {
+    background: #fbf9f9e1;
+    padding: 5px;
+    color: #000;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    text-align: center;
+  }
+  
+  .product-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    margin-bottom: 10px;
+  }
+  
+  .product-card h3 {
+    font-size: 1rem;
+    margin: 10px 0 5px;
+    text-transform: capitalize;
+  }
+  
+  .product-card p {
+    color: #555;
+    font-weight: bold;
+  }
+  
+  .stars {
+    color: #f5c518;
+    font-size: 0.9rem;
+  }
+  
+  .add-to-cart {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 6px 12px;
+    margin-bottom: 8px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .add-to-cart:hover {
+    background-color: #333;
+  }
+
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 5px;
+    justify-content: center; /* Horizontally center the grid */
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 10px;
+  }
+  
+  /* Responsive breakpoints */
+  @media (max-width: 1024px) {
+    .product-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .product-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .product-grid {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+  
+  .product-grid-row {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 20px;
+}
+
+.product-row {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 20px;
+}
+
+.first-row {
+  justify-content: center;
+}
+
+.second-row {
+  justify-content: center;
+}
+

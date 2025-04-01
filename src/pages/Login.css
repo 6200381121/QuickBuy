@@ -1,0 +1,112 @@
+/* Login Page Styling */
+.login-container {
+  display: flex;
+  height: 80vh;
+}
+
+/* Left side image section */
+.login-left {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f7f7f7;
+    padding: 20px;
+  }
+  
+  .login-left img {
+    width: 100%;  /* Make the image take full width */
+    height: 100%; /* Adjust height to fill the container */
+    max-width: 800px; /* Increase max width */
+    max-height: 800px; /* Increase max height */
+    object-fit: cover; /* Ensure image maintains aspect ratio */
+  }
+  
+
+/* Right side login form */
+.login-right {
+  flex: 1;
+  display: flex;
+  color: black;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  background:  #c4a47c;
+}
+
+.login-right h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.brand-name {
+  color: #b22222;
+  font-weight: bold;
+}
+
+.login-right p {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.login-right form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 350px;
+}
+
+.login-input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.login-button {
+  background-color: #b22222;
+  color: white;
+  padding: 12px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.login-button:hover {
+  background-color: #8b0000;
+}
+
+.forgot-password {
+  margin-top: 10px;
+}
+
+.forgot-password a {
+  color: #b22222;
+  text-decoration: none;
+}
+
+.forgot-password a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .login-container {
+    flex-direction: column;
+  }
+
+  .login-left {
+    display: none; /* Hide image on smaller screens */
+  }
+
+  .login-right {
+    width: 100%;
+    padding: 20px;
+  }
+}
