@@ -153,26 +153,39 @@ General Reset
   
   /* Hero Section */
   .hero {
-    background: black;
-    color: white;
-    text-align: center;
-    padding: 40px 10px;
-    width: 1200px;
-  }
-  .hero .badges span {
-    background: gray;
-    color: white;
-    padding: 8px 10px;
-    margin: 0 5px;
-    border-radius: 5px;
-  }
-  .buy-btn {
-    background-color: green;
-    color: white;
-    padding: 10px 20px;
-    margin-top: 20px;
-    border: none;
-  }
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #e5d1b8;
+  padding: 40px;
+  /* border-radius: 10px; */
+  text-align: left;
+}
+
+.hero-content {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.hero-text {
+  flex: 1;
+}
+
+.hero-image {
+  /* width: 250px; */
+  height: 250PX;
+  width: 800PX;
+  /* border-radius: 10px; */
+}
+.badges span {
+  background-color: #ff4c4c; /* Red background */
+  color: white;
+  padding: 4px 8px;
+  border-radius: 5px;
+  text-align: center;
+}
+
   
   /* Features */
   .features {
@@ -206,10 +219,13 @@ General Reset
     padding: 6px;
     margin-right: 5px;
   }
-  .join-btn {
-    background-color: gold;
-    padding: 6px 12px;
-    border: none;
+  .buy-btn {
+    background-color: #161010;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 20px; /* Button ko niche laane ke liye */
   }
   .footer-bottom {
     text-align: center;

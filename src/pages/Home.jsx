@@ -121,16 +121,26 @@ const Home = () => {
             </div>
           </section>
 
-          {/* Hero Section */}
-          <section className="hero">
-            <h2>Enhance Your Music Experience</h2>
-            <div className="badges">
-              <span>23</span>
-              <span>5.9</span>
-              <span>59</span>
-            </div>
-            <button className="buy-btn">Buy Now!</button>
-          </section>
+       {/* Hero Section */}
+<section className="hero">
+  <div className="hero-content">
+    <div className="hero-text">
+      <h2>Enhance Your Music Experience</h2>
+      <div className="badges">
+        <span>23</span>
+        <span>5.9</span>
+        <span>59</span>
+      </div>
+      <button className="buy-btn">Buy Now!</button>
+    </div>
+    <img
+      src="https://images.unsplash.com/photo-1558537348-c0f8e733989d?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8amJsfGVufDB8fDB8fHww"
+      alt="speakears"
+      className="hero-image"
+    />
+  </div>
+</section>
+
 
           {/* Features Section */}
           <section className="features">
