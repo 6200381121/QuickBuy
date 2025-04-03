@@ -22,7 +22,7 @@ const About = () => {
         <div className="story-text">
           <h3>Our Story</h3>
           <p>
-            Launched in 2025, Exclusive is South Asia’s premier online shopping
+            Launched in 2025, QuickNuy is South Asia’s premier online shopping
             marketplace with an active presence in Bangladesh. Supported by a wide
             range of tailored marketing, data and service solutions, Exclusive has
             10,500 sellers and 300 brands and serves 3 million customers across the

@@ -30,8 +30,10 @@ const AdminDashboard = () => {
           <Link to="/AccountPage" className="menu-item">📦 AccountPage</Link>
           <Link to="/order-list" className="menu-item">👤 Order List</Link>
           <Link to="/product-detail" className="menu-item">👜 Add Product</Link>
+          <button onClick={handleLogout} className="logout">↩ Logout</button>
+
         </nav>
-        <button onClick={handleLogout} className="logout">↩ Logout</button>
+        {/* <button onClick={handleLogout} className="logout">↩ Logout</button> */}
       </aside>
 
       <main className="dashboard-content">
