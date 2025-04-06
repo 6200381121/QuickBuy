@@ -36,7 +36,7 @@ const ViewCart = () => {
           {cartItems.map((item) => (
             <tr key={item.id}>
               <td>
-                <img src="https://images.philips.com/is/image/philipsconsumer/f3478916ee84410b8d1cb10f011dd27e?wid=700&hei=700&$pnglarge$" className="cart-item-img" alt={item.name} />
+                <img src="https://fdn2.gsmarena.com/vv/pics/apple/apple-iphone-15-pro-1.jpg" className="cart-item-img" alt={item.name} />
               </td>
               <td>${item.price}</td>
               <td>

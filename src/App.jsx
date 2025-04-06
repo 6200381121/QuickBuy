@@ -19,6 +19,7 @@ import ViewCart from './pages/ViewCart'; // Import Cart page
 import OrderList from './pages/OrderList';
 import AccountPage from "./pages/AccountPage";
 import AdminLogin from "./pages/Adminlogin"; // Import AdminLogin
+import ProductDetails from './pages/ProductDetails';
 
 function App() {
   return (
@@ -47,6 +48,8 @@ function App() {
             <Route path="/checkout" element={<Checkout />} />
             <Route path="/admin-login" element={<AdminLogin />} />
             <Route path="/admin-dashboard" element={<AdminDashboard />} />
+            <Route path='/product-details' element={<ProductDetails />} />
+
           </Routes>
         </main>
         <Footer />

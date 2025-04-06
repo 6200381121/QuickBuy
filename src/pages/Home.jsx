@@ -1,8 +1,7 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import './Home.css';
 
-// Dummy product and category data
 const products = [
   {
     name: "HAVIT i-W92 Smartwatch",
@@ -60,7 +59,6 @@ const products = [
   },
 ];
 
-// Correct route paths to match App.jsx
 const categories = [
   { name: "Women Fashion", route: "/woman-fashion" },
   { name: "Men Fashion", route: "/man-fashion" },
@@ -68,6 +66,12 @@ const categories = [
 ];
 
 const Home = () => {
+  const navigate = useNavigate();
+
+  const handleImageClick = () => {
+    navigate('/product-details');
+  }
+
   return (
     <>
       <div className="main-container">
@@ -85,6 +89,7 @@ const Home = () => {
 
         {/* Main Content */}
         <main className="main-content">
+
           {/* Banner Section */}
           <section className="banner">
             <img
@@ -104,7 +109,12 @@ const Home = () => {
               {products.map((p, i) => (
                 <div className="product-card" key={i}>
                   <span className="discount">{p.discount}</span>
-                  <img src={p.image} alt={p.name} />
+                  <img
+                    src={p.image}
+                    alt={p.name}
+                    onClick={handleImageClick}
+                    style={{ cursor: 'pointer' }}
+                  />
                   <h4>{p.name}</h4>
                   <div className="price">
                     <span className="new">{p.price}</span>
@@ -121,26 +131,25 @@ const Home = () => {
             </div>
           </section>
 
-       {/* Hero Section */}
-<section className="hero">
-  <div className="hero-content">
-    <div className="hero-text">
-      <h2>Enhance Your Music Experience</h2>
-      <div className="badges">
-        <span>23</span>
-        <span>5.9</span>
-        <span>59</span>
-      </div>
-      <button className="buy-btn">Buy Now!</button>
-    </div>
-    <img
-      src="https://images.unsplash.com/photo-1558537348-c0f8e733989d?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8amJsfGVufDB8fDB8fHww"
-      alt="speakears"
-      className="hero-image"
-    />
-  </div>
-</section>
-
+          {/* Hero Section */}
+          <section className="hero">
+            <div className="hero-content">
+              <div className="hero-text">
+                <h2>Enhance Your Music Experience</h2>
+                <div className="badges">
+                  <span>23</span>
+                  <span>5.9</span>
+                  <span>59</span>
+                </div>
+                <button className="buy-btn">Buy Now!</button>
+              </div>
+              <img
+                src="https://images.unsplash.com/photo-1558537348-c0f8e733989d?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8amJsfGVufDB8fDB8fHww"
+                alt="speakers"
+                className="hero-image"
+              />
+            </div>
+          </section>
 
           {/* Features Section */}
           <section className="features">
@@ -160,6 +169,7 @@ const Home = () => {
               <p>We return money within 30 days</p>
             </div>
           </section>
+
         </main>
       </div>
     </>
